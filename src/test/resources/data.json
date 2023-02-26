@@ -1,0 +1,97 @@
+{
+  "url": {
+    "login": "/login",
+    "admin": "/admin",
+    "TümAyarlar": "/admin/setting/AllSettings",
+    "İndirimler": "/admin/discount/List",
+    "Müşteriler": "/Admin/Customer/List",
+    "MarkaSkorları": "/Admin/category/categoryBrandScoreList",
+    "ÜrünleriYönet": "Admin/Product/List",
+    "kisiseltavsiye": "/fittest",
+    "mwebLogin": "/login"
+  },
+  "userData": {
+    "emailAdmin": "erdioran@supplementler.com",
+    "passwordAdmin": "12051205Eo-",
+    "userShortNameAdmin": "Erdi Oran",
+    "emailCustomer": "supplementler.qa@gmail.com",
+    "passwordCustomer": "supp2023Qa",
+    "userShortNameCustomer": "QA Team",
+    "emailHotmail": "supplementler.qa@hotmail.com",
+    "passwordHotmail": "supp2023Qa",
+    "emailGuest": "nocustomersupplementler@hotmail.com",
+    "passwordGuest": "supp2023Qa",
+    "emailVitaminler": "vitaminlertest@hotmail.com",
+    "passwordVitaminler": "supp2023Qa",
+    "emailKayitliKart": "supplementler.kayitlikart@hotmail.com",
+    "passwordKayitliKart": "supp2023Qa"
+  },
+  "testUrl": {
+    "productYoutubeVideo": "/urun/musclecloth-pro-wrist-wraps-siyah-kirmizi-2li-paket-13162",
+    "productStickyBarSupplementler": "/urun/supplementlercom-whey-protein-2000-gr-8349",
+    "productStickyBarVitaminler": "/urun/natures-supreme-omega-3-1000-mg-60-kapsul-7082",
+    "productStickyBarFitmoda": "/urun/musclecloth-elite-reglan-t-shirt-siyah-13962",
+    "productCombination": "/urun/musclecloth-pro-softshell-mont-tam-fermuarli-erkek-polar-beyaz-19851"
+  },
+  "colorCode": {
+    "stickyBarBackgroundSupplementler": "rgba(37, 80, 135, 0.94)",
+    "stickyBarDiscountBackgroundSupplementler": "rgba(214, 63, 19, 1)",
+    "stickyBarFontColorSupplementler": "rgba(255, 255, 255, 1)",
+    "stickyBarBackgroundVitaminler": "rgba(73, 126, 63, 0.94)",
+    "stickyBarDiscountBackgroundVitaminler": "rgba(214, 63, 19, 1)",
+    "stickyBarFontColorVitaminler": "rgba(255, 255, 255, 1)",
+    "stickyBarBackgroundFitmoda": "rgba(20, 20, 20, 0.94)",
+    "stickyBarDiscountBackgroundFitmoda": "rgba(253, 131, 12, 1)",
+    "stickyBarFontColorFitmoda": "rgba(255, 255, 255, 1)",
+    "siparisAlindiMailFitmoda": "#eb8b2d",
+    "siparisAlindiMailSupplementler": "#32609b",
+    "siparisAlindiMailVitaminler": "#5f9d3b"
+  },
+  "errorMessage": {
+    "KuponKoduHatası": "Girilen kupon kodu geçersizdir.",
+    "MailUyelikMevcut": "Bu mail adresi ile kayıtlı bir hesap bulunmaktadır. Kayıtlı şifreniz ile giriş yapabilirsiniz",
+    "MailUyelikMevcutWeb": "Bu mail adresi ile kayıtlı bir hesap bulunmaktadır. Kayıtlı şifreniz ile giriş yapabilirsiniz\nHatalı bilgi girildi.",
+    "GuesTokenTimeOut": "İstek zaman aşımına uğradı. Sayfayı yenileyin ve tekrar deneyin.",
+    "KartAlanlariEksik": "İstek zaman aşımına uğradı. Sayfayı yenileyin ve tekrar deneyin.",
+    "krediKartiEksikAlanlar": "Kart numarası giriniz\nYanlış kart numarası girildi\nCVV giriniz\nYanlış CVV girdiniz\nLütfen kartınızın son kullanma tarihini giriniz."
+  },
+  "uyariMessage": {
+    "formOnayla": "Lütfen ön bilgilendirme formunu ve mesafeli satış sözleşmesini onaylayınız.",
+    "havaleBankaSecin": "Lütfen havale yapacağınız bankayı seçiniz.Lütfen ön bilgilendirme formunu ve mesafeli satış sözleşmesini onaylayınız.",
+    "alisverisKredisiLimit": "Alışveriş kredisinden yararlanabilmek için sepet tutarınız en az 400 TL, en fazla 15.000 TL olmalıdır.",
+    "agtKapidaKrediKarti": "Adrese Hemen Teslim gönderi seçeneği ile Kapıda Kredi Kartı ödeme seçeneği kullanılamamaktadır.",
+    "agtKapidaNakit": "Adrese Hemen Teslim gönderi seçeneği ile Kapıda Nakit ödeme seçeneği kullanılamamaktadır."
+  },
+  "textControl": {
+    "baslikMailFitmoda": "Fitmoda.com. Siparişiniz alınmıştır",
+    "baslikMailSupplementler": "Supplementler.com. Siparişiniz alınmıştır",
+    "baslikMailVitaminler": "Vitaminler.com. Siparişiniz alınmıştır",
+    "siparisAlindiMailFitmoda": "Orijinalliği bozulmamış ürünlerin iadesi kabul edilmektedir. Hijyen koşulları gereği yoga matı, akıllı tartı, çorap ve iç giyim ürünlerinde yalnızca kullanılmamış, paketi açılmamış ve denenmemiş ürünler iade edilebilir.Ayakkabılar tekrar satışa sunulabilecek şekilde, orijinal ambalajında iade edilebilir.",
+    "siparisAlindiMailSupplementler": "Ürünler firmamıza direkt olarak hiç bir süreçte açılmadan gelip aynı şekilde açılmadan müşterilerimize gönderilmektedir. Dış kapağının etrafında açılmadığına dair plastik olan ürünlerde bile jelatinin tam yapışmadığını görebilirsiniz. Bunun sebebi yapıştırıcı maddenin. sağlık açısından herhangi bir risk teşkil etmemesi için minimum miktarda veya hiç kullanılmamasıdır. Menşei ABD olan birçok markada kapağın altında herhangi bir koruyucu kağıt ya da jelatin bulunmaması üretim standartları gereği normal bir durumdur. Menşei Avrupa olan ürünlerde ise kapağın altında bulunan kağıt ya da jelatin pres yöntemi ile makineler tarafından kapatılmaktadır. Ayrıca kağıt ya da jelatinin yapışkanlık etkisi zaman ile zayıflamaktadır. Avrupa'daki diğer kullanılan bir yöntem ise kapak açıldığı zaman jelatinin beraberinde kısmen çıkmasıdır. Yapışkanların sağlık açısından sorun yaratmaması için yakın zamanda Avrupa'nın da jelatin veya kağıt kullanımının da sona ermesi öngörülmektedir.",
+    "siparisAlindiMailVitaminler": "Ürünler firmamıza direkt olarak hiç bir süreçte açılmadan gelip aynı şekilde açılmadan müşterilerimize gönderilmektedir. Dış kapağının etrafında açılmadığına dair plastik olan ürünlerde bile jelatinin tam yapışmadığını görebilirsiniz. Bunun sebebi yapıştırıcı maddenin. sağlık açısından herhangi bir risk teşkil etmemesi için minimum miktarda veya hiç kullanılmamasıdır. Menşei ABD olan birçok markada kapağın altında herhangi bir koruyucu kağıt ya da jelatin bulunmaması üretim standartları gereği normal bir durumdur. Menşei Avrupa olan ürünlerde ise kapağın altında bulunan kağıt ya da jelatin pres yöntemi ile makineler tarafından kapatılmaktadır. Ayrıca kağıt ya da jelatinin yapışkanlık etkisi zaman ile zayıflamaktadır. Avrupa'daki diğer kullanılan bir yöntem ise kapak açıldığı zaman jelatinin beraberinde kısmen çıkmasıdır. Yapışkanların sağlık açısından sorun yaratmaması için yakın zamanda Avrupa'nın da jelatin veya kağıt kullanımının da sona ermesi öngörülmektedir.",
+    "siparisAlindiMailGuest": "Bizi tercih ettiğiniz için çok teşekkür ederiz.\nSiparişiniz başarıyla alınmıştır.",
+    "kapidaKrediKarti": "Kapıda Kredi Kartı ile Ödeme Bilgileri\nSiparişinizin ödemesini, dilerseniz kapınızda ürünü teslim alırken kargo görevlisine yapabilirsiniz.\nKapıda Kredi Kartı ile Ödeme seçeneğinde, kapıda paketinizi teslim alırken kargo görevlisinin getireceği pos cihazı ile ödeme yapabilirsiniz.\nKapıda Kredi Kartı ile ödemelerde “Taksit” imkanı bulunmamaktadır.\nKapıda kredi kartı ile ödemelerde 10 TL hizmet bedeli faturanıza eklenir. Kapıda ödemenizi nakit veya kredi kartı ile gerçekleştirebilirsiniz, ancak bu adımda (ödeme adımında) yaptığınız seçimi kargonuz depomuzdan çıktıktan sonra değiştirme imkanımız bulunmamaktadır.",
+    "kapidaNakit": "Kapıda Nakit Ödeme Bilgileri\nSiparişinizin ödemesini, dilerseniz kapınızda ürünü teslim alırken kargo görevlisine yapabilirsiniz.\nKapıda Nakit Ödeme seçeneğinde, siparişinizi teslim alırken kargo görevlisine nakit ödeme yapabilirsiniz.\nKapıda nakit ile ödemelerde 10 TL hizmet bedeli faturanıza eklenir.\nKapıda ödemenizi nakit veya kredi kartı ile gerçekleştirebilirsiniz, ancak bu adımda (ödeme adımında) yaptığınız seçimi kargonuz depomuzdan çıktıktan sonra değiştirme imkanımız bulunmamaktadır.",
+    "havaleSipariNoInfo":"Ödemenizin işleme alınması için havale esnasında açıklama alanında sipariş numaranızı mutlaka belirtmelisiniz."
+  },
+  "iconUrl": {
+    "sepetEksiIconMweb": "M10 13V11H14V13H10Z",
+    "sepetArtiIconMweb": "M11.0609 16V12.8814H8V11.1186H11.0609V8H12.9391V11.1186H16V12.8814H12.9391V16H11.0609Z",
+    "sepetDeleteIconMweb": "M6.667 4.667A1.333 1.333 0 0 1 8 3.333h4a1.333 1.333 0 0 1 1.333 1.334V6H16a.667.667 0 1 1 0 1.333h-.713l-.578 8.095a1.333 1.333 0 0 1-1.33 1.239H6.62a1.333 1.333 0 0 1-1.33-1.239l-.576-8.095H4A.667.667 0 0 1 4 6h2.667V4.667zM8 6h4V4.667H8V6zM6.05 7.333l.57 8h6.76l.571-8H6.05zm2.617 1.334a.667.667 0 0 1 .666.666v4a.667.667 0 1 1-1.333 0v-4a.667.667 0 0 1 .667-.666zm2.666 0a.667.667 0 0 1 .667.666v4a.667.667 0 1 1-1.333 0v-4a.667.667 0 0 1 .666-.666z"
+  },
+  "iyzicoTestKart": {
+    "adSoyad": "TEST KART",
+    "kartNo": "5451030000000000",
+    "ay": "1",
+    "yil": "25",
+    "cvv": "000"
+  },
+  "havaleInfo": {
+    "ibanGaranti": "TR67 0006 2000 4480 0006 2775 40",
+    "hesapNoGaranti": "6277540",
+    "subeKoduGaranti": "448",
+    "hesapAdiGaranti": "Dikey Vitamin Kozmetik ve Gıda Takviyeleri A.Ş",
+    "subeAdiGaranti": "Maslak Bulvar Şubesi"
+  }
+
+}

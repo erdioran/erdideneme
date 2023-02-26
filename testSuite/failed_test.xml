@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Supplementler UI Test Suite" parallel="tests" data-provider-thread-count="1">
+    <listeners>
+        <listener class-name="supplementler.listener.ExecutionListener"/>
+        <listener class-name="supplementler.listener.TestListener"/>
+        <listener class-name="supplementler.listener.AnnotationTransformer"/>
+    </listeners>
+    <test name="Run All Tests">
+        <classes>
+            <class name="io.cucumber.skeleton.RunnerFailed"/>
+        </classes>
+    </test>
+</suite>
+

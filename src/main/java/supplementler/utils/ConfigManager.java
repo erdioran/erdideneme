@@ -1,7 +1,8 @@
 package supplementler.utils;
 
-
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 
 import java.io.FileInputStream;
@@ -17,7 +18,7 @@ public class ConfigManager {
 
 
     private static final String TEST_CONFIG_FILE = Paths.get("src/test/resources/app.properties").toString();
-
+    private static final Logger LOGGER = LogManager.getLogger(ConfigManager.class);
     private static Map<String, String> configMap = new HashMap<>();
 
     private ConfigManager() {
@@ -32,32 +33,36 @@ public class ConfigManager {
                         .stream()
                         .collect(Collectors.toMap(e -> e.getKey().toString(),
                                 e -> e.getValue().toString())));
-
+                LOGGER.debug("Loaded config properties : " + TEST_CONFIG_FILE);
             } catch (Exception e) {
-
+                LOGGER.error(e);
                 throw new RuntimeException(e);
             }
         }
         return configMap.get(key);
     }
+    public static Boolean isHeadless() {
+        return StringUtils.isNotBlank(System.getProperty("headless")) ? Boolean.parseBoolean(System.getProperty("headless"))
+                : Boolean.parseBoolean(getConfigProperty("headless"));
+    }
 
     public static Integer getExplicitWaitTime() {
         return getIntValue("explicit.wait.time", 45);
     }
-    public static Integer getIntValue(String key, Integer defaultValue) {
-        return StringUtils.isNotBlank(getRunTimeValue(key)) ? Integer.parseInt(getRunTimeValue(key)) : defaultValue;
-    }
+
 
     public static Integer getMaxRetryCount() {
         return Integer.parseInt(System.getProperty("max.retry.count", getStringValue("max.retry.count", String.valueOf(1))));
     }
 
-    public static String getPlatform() {
-        return System.getProperty("platform", getStringValue("platform", "android"));
+    public static String getBrowser() {
+        return System.getProperty("browser", getStringValue("browser", "chrome"));
     }
 
 
-
+    public static Integer getIntValue(String key, Integer defaultValue) {
+        return StringUtils.isNotBlank(getRunTimeValue(key)) ? Integer.parseInt(getRunTimeValue(key)) : defaultValue;
+    }
 
     public static String getStringValue(String key, String defaultValue) {
         return getRunTimeValue(key, defaultValue);

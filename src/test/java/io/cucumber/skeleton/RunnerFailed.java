@@ -2,37 +2,25 @@ package io.cucumber.skeleton;
 
 
 import base.AutomationMethods;
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
-import io.cucumber.java.Scenario;
-import org.apache.commons.lang3.StringUtils;
-import org.testng.ITestResult;
-import org.testng.Reporter;
-import org.testng.annotations.*;
-import supplementler.base.DriverManager;
-import supplementler.utils.ConfigManager;
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.testng.ITestResult;
+import org.testng.annotations.*;
+import supplementler.base.DriverManager;
+import supplementler.utils.ConfigManager;
 
-
-import java.io.File;
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 
 
 @CucumberOptions(
-        publish = true,
-        features = {"src/test/resources/io/cucumber/features/web_case.feature", "src/test/resources/io/cucumber/features/admin_case.feature", "src/test/resources/io/cucumber/features/mweb_case.feature", "src/test/resources/io/cucumber/features/mvitaminler.feature",},
+        features = "@target/failedrerun.txt",
         glue = "io.cucumber.skeleton",
-        tags = "@erdi",
         monochrome = true,
         plugin = {"summary", "pretty",
                 "html:target/cucumber-reports.html",
@@ -41,8 +29,9 @@ import java.net.MalformedURLException;
                 "rerun:target/failedrerun.txt"}
 )
 
-public class RunCucumberTest extends AbstractTestNGCucumberTests {
-    private static final Logger LOGGER = LogManager.getLogger(RunCucumberTest.class);
+public class RunnerFailed extends AbstractTestNGCucumberTests {
+    private static final Logger LOGGER = LogManager.getLogger(RunnerFailed.class);
+
     @BeforeMethod
     public void startBrowser(ITestResult result, Method method) throws MalformedURLException {
 
@@ -51,7 +40,7 @@ public class RunCucumberTest extends AbstractTestNGCucumberTests {
 
     @AfterMethod
     public void closeBrowser(ITestResult result) {
-        if (!result.isSuccess()) {
+        if (!result.isSuccess() && !ConfigManager.isHeadless()) {
             ExtentCucumberAdapter.getCurrentStep().log(Status.FAIL, MediaEntityBuilder.createScreenCaptureFromBase64String(AutomationMethods.getBase64Screenshot()).build());
         }
         DriverManager.quitDriver();
@@ -60,12 +49,21 @@ public class RunCucumberTest extends AbstractTestNGCucumberTests {
 
     @BeforeTest(alwaysRun = true)
     public void beforeTestReport() {
-
     }
 
 
     @AfterTest(alwaysRun = true)
     public void afterTestReport() {
+
+/*
+        try {
+            sendEmail();
+        } catch (Exception e) {
+            LOGGER.info("The report could not be sent.");
+        }
+
+
+ */
 
 
     }
@@ -80,6 +78,5 @@ public class RunCucumberTest extends AbstractTestNGCucumberTests {
         DriverManager.quitDriver();
 
     }
-
 
 }
